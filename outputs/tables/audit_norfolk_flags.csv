@@ -1,0 +1,7 @@
+,n,share
+duration_lt_min,80747.0,1.47
+duration_gt_max,136.0,0.002
+distance_le_0,467009.0,8.503
+distance_gt_max,234.0,0.004
+speed_gt_20mph,12296.0,0.224
+tract_missing,38299.0,0.697

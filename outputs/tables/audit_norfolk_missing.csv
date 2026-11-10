@@ -1,0 +1,11 @@
+,n_missing,pct_missing,dtype,n_unique
+trip_id,0,0.0,str,5492561
+vehicle_type,0,0.0,str,2
+duration_min,0,0.0,int64,287
+distance_mi,80,0.001,float64,473
+start_date,0,0.0,str,59530
+start_hour,0,0.0,int64,24
+end_date,0,0.0,str,59482
+end_hour,0,0.0,int64,24
+start_tract,26192,0.477,Int64,80
+end_tract,28901,0.526,Int64,80

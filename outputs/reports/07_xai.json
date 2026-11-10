@@ -1,0 +1,53 @@
+{
+  "agreement": {
+    "spearman_importance": 0.5291316526610644,
+    "trip_level_shap_corr": {
+      "hour": 0.6100055208444292,
+      "is_weekend": -0.5388952437387589,
+      "is_holiday": 0.7684217831689388,
+      "is_daylight": 0.8734848032820898,
+      "temp_c": 0.7565863401908701,
+      "precip_mm": 0.42374475527882954,
+      "precip_prev3h_mm": 0.6305988986541085,
+      "wind_kmh": 0.11567710372325443,
+      "humidity_pct": 0.4848837780655913,
+      "cloud_pct": 0.6627451958844548,
+      "od_dist_km": 0.964276185248289,
+      "o_dist_cbd_km": 0.9010097589067972,
+      "o_pop_density_km2": 0.59209324961713,
+      "o_job_density_km2": 0.00013905112560256265,
+      "o_median_income": 0.1111410706862346,
+      "o_median_age": 0.28282137884335323,
+      "o_pct_age_18_29": 0.40982010320588674,
+      "o_pct_hh_no_car": 0.43245220217219965,
+      "o_pct_commute_transit": 0.390845816048194,
+      "o_pct_commute_bicycle": 0.6679554532576227,
+      "o_pct_commute_walk": 0.18510417956545216,
+      "o_pct_jobs_retail_food": 0.273576785488131,
+      "d_pop_density_km2": -0.19578291817657353,
+      "d_job_density_km2": -0.3699249226092499,
+      "d_median_income": 0.03670605537055522,
+      "d_median_age": 0.6692978090120958,
+      "d_pct_age_18_29": 0.5150622081723734,
+      "d_pct_hh_no_car": 0.16355789924925052,
+      "d_pct_commute_transit": 0.5848308888480603,
+      "d_pct_commute_bicycle": 0.7469393985372313,
+      "d_pct_commute_walk": 0.19875136047468267,
+      "d_pct_jobs_retail_food": 0.42894721327252605,
+      "city_ebike_share_7d": 0.9903880828431332,
+      "city_trips_7d": 0.4218493255406078
+    }
+  },
+  "k_zones": 5,
+  "silhouette": {
+    "3": 0.1825783283300555,
+    "4": 0.18112996364678194,
+    "5": 0.19141163921741638,
+    "6": 0.1536851166515408
+  },
+  "zone_ari_lgbm_vs_lr": 0.34381431181460875,
+  "main_effect_share": 0.4895924121070558,
+  "w_islands": [],
+  "base_lgbm": -2.969565410868951,
+  "base_lr": -2.9251069814039328
+}

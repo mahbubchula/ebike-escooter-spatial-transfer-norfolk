@@ -1,0 +1,28 @@
+\begin{table}[!htbp]
+\centering
+\small
+\caption{Trips by vehicle type, June 2021 to October 2026 (training and test periods). Mean (SD) for continuous variables, percentage for binary variables; SMD = standardized mean difference (e-bike minus e-scooter).}
+\label{tab:sample}
+\begin{tabular}{lrrr}
+\toprule
+Variable & E-scooter & E-bike & SMD \\
+\midrule
+Trips & 4,146,606 & 276,615 & \\
+OD centroid distance (km) & 0.92 (1.27) & 1.33 (1.62) & +0.28 \\
+Ridden distance (km)$^{a}$ & 1.73 (1.94) & 2.34 (2.56) & +0.27 \\
+Duration (min)$^{a}$ & 10.3 (12.5) & 13.1 (14.8) & +0.20 \\
+Start hour & 14.0 (6.0) & 14.1 (5.8) & +0.02 \\
+Temperature (\textdegree C) & 20.4 (7.7) & 20.6 (7.6) & +0.03 \\
+Precipitation (mm/h) & 0.11 (0.65) & 0.09 (0.61) & -0.02 \\
+Wind speed (km/h) & 12.8 (6.6) & 13.2 (6.7) & +0.06 \\
+Origin distance to downtown (km) & 3.44 (2.89) & 4.47 (3.19) & +0.34 \\
+Origin median income (US\$000) & 61.5 (23.3) & 60.7 (23.1) & -0.03 \\
+Origin car-free households (\%) & 15.0 (10.7) & 14.1 (10.6) & -0.08 \\
+Lagged fleet e-bike share, 7 days (\%) & 6.2 (3.0) & 7.8 (3.7) & +0.47 \\
+Same origin and destination tract (\%) & 51.4 & 40.8 & -0.21 \\
+Weekend (\%) & 29.1 & 29.0 & -0.00 \\
+Daylight (\%) & 62.2 & 64.4 & +0.05 \\
+\bottomrule
+\end{tabular}
+\par\vspace{2pt}\parbox{\linewidth}{\footnotesize $^{a}$ Recorded after the trip; descriptive only and never a model feature. The 2025 validation year is summarized in Table~\ref{tab:split}.}
+\end{table}

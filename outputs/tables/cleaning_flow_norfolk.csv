@@ -1,0 +1,7 @@
+step,remaining,removed
+raw records,5492561,0
+from 2021-06-01 (both vehicle types offered),4793390,699171
+duration 1-180 min,4733003,60387
+distance > 0 and <= 30 miles,4488727,244276
+average speed <= 20 mph,4480848,7879
+start and end tract present,4455397,25451

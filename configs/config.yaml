@@ -1,0 +1,26 @@
+project:
+  name: ebike_escooter_spatial_transfer_norfolk
+  title: "Where riders choose e-bikes over e-scooters: spatial transferability and explainable machine learning"
+  seed: 42
+
+paths:
+  raw_norfolk: data/raw/norfolk/norfolk_micromobility_trips_raw.csv
+  interim: data/interim
+  processed: data/processed
+  tables: outputs/tables
+  figures: outputs/figures
+  reports: outputs/reports
+  logs: outputs/logs
+
+sources:
+  norfolk:
+    url: https://data.norfolk.gov/Government/Micromobility-Electric-Scooters-and-Bikes-/wqxq-hhe6
+    api_csv: https://data.norfolk.gov/api/views/wqxq-hhe6/rows.csv?accessType=DOWNLOAD
+    downloaded: 2026-11-09
+    licence: "City of Norfolk open data terms"
+
+audit:
+  # Plausibility limits used only to FLAG records in the audit (nothing is deleted at this stage)
+  min_duration_min: 1
+  max_duration_min: 180
+  max_distance_miles: 30

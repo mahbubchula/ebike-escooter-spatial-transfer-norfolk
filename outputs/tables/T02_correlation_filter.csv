@@ -1,0 +1,9 @@
+f1,f2,abs_spearman,decision
+temp_c,feels_like_c,0.98,drop feels_like_c
+od_dist_km,same_tract,0.937,drop same_tract
+o_dist_cbd_km,d_dist_cbd_km,0.858,drop d_dist_cbd_km
+day_of_week,is_weekend,0.81,drop day_of_week
+o_median_income,o_pct_commute_wfh,0.724,drop o_pct_commute_wfh
+o_median_income,o_pct_degree,0.718,drop o_pct_degree
+d_median_income,d_pct_degree,0.717,drop d_pct_degree
+d_median_income,d_pct_commute_wfh,0.717,drop d_pct_commute_wfh

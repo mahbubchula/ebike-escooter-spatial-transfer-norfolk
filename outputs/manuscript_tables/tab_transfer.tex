@@ -1,0 +1,28 @@
+\begin{table}[!htbp]
+\centering
+\scriptsize
+\caption{Spatial transferability: AUC on trips starting in each block for models trained on all areas (seen), on a size-matched random subsample (matched) and without any trip starting or ending in the block (unseen).}
+\label{tab:transfer}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrrrrrrr}
+\toprule
+& & & \multicolumn{3}{c}{Spline LR, AUC (validation)} & \multicolumn{3}{c}{LightGBM, AUC (validation)} & \multicolumn{2}{c}{Penalty, test} \\
+\cmidrule(lr){4-6}\cmidrule(lr){7-9}\cmidrule(lr){10-11}
+Block & Tracts & Trips (\%) & Seen & Matched & Unseen & Seen & Matched & Unseen & LR & LGBM \\
+\midrule
+B1 & 12 & 5.1 & 0.628 & 0.623 & 0.601 & 0.616 & 0.620 & 0.581 & +0.002 & +0.009 \\
+B2 & 14 & 3.3 & 0.576 & 0.578 & 0.563 & 0.577 & 0.569 & 0.570 & +0.027 & +0.034 \\
+B3 & 13 & 5.5 & 0.579 & 0.577 & 0.504 & 0.588 & 0.591 & 0.535 & +0.008 & +0.017 \\
+B4 & 14 & 40.9 & 0.606 & 0.608 & 0.517 & 0.614 & 0.607 & 0.571 & +0.149 & +0.037 \\
+B5 & 12 & 3.8 & 0.581 & 0.582 & 0.546 & 0.589 & 0.582 & 0.600 & +0.013 & +0.008 \\
+B6 & 15 & 41.4 & 0.684 & 0.682 & 0.588 & 0.682 & 0.683 & 0.624 & +0.107 & +0.031 \\
+\midrule
+\multicolumn{11}{l}{\textit{Trip-weighted AUC penalty (matched $-$ unseen), validation}} \\
+K = 4 blocks & & & \multicolumn{3}{c}{0.138} & \multicolumn{3}{c}{0.054} & & \\
+K = 6 blocks & & & \multicolumn{3}{c}{0.082} & \multicolumn{3}{c}{0.043} & & \\
+K = 8 blocks & & & \multicolumn{3}{c}{0.073} & \multicolumn{3}{c}{0.041} & & \\
+\bottomrule
+\end{tabular}
+}
+\par\vspace{2pt}\parbox{\linewidth}{\footnotesize Penalty = matched minus unseen AUC. Blocks are k-means clusters of tract centroids (K = 6 in the main analysis); the bottom rows repeat the validation experiment with K = 4 and K = 8.}
+\end{table}

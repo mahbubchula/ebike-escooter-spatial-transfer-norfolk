@@ -1,0 +1,22 @@
+{
+  "n_trips": 4423221,
+  "ebike_share": 0.06253700640325228,
+  "dropped": [
+    "d_dist_cbd_km",
+    "d_pct_commute_wfh",
+    "d_pct_degree",
+    "day_of_week",
+    "feels_like_c",
+    "o_pct_commute_wfh",
+    "o_pct_degree",
+    "same_tract"
+  ],
+  "feature_sets": {
+    "main": 35,
+    "main_plus_history": 36,
+    "origin_only": 24
+  },
+  "k_blocks": 6,
+  "missing_city_share_7d": 0.00032871972709480266,
+  "missing_o_share_28d": 0.00391321166181839
+}

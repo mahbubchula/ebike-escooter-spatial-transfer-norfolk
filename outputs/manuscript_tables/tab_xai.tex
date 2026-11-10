@@ -1,0 +1,27 @@
+\begin{table}[!htbp]
+\centering
+\scriptsize
+\caption{Explanation importance and its spatial autocorrelation, 2026 test trips.}
+\label{tab:xai}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lcccc}
+\toprule
+& \multicolumn{2}{c}{Mean $|$SHAP$|$ [95\% CI]} & \multicolumn{2}{c}{Moran's I of tract mean SHAP} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+Feature group & Spline LR & LightGBM & Spline LR & LightGBM \\
+\midrule
+Trip geometry & 0.459 [0.455, 0.463] & 0.450 [0.440, 0.460] & 0.84 & 0.88 \\
+Fleet supply & 0.433 [0.387, 0.478] & 0.451 [0.400, 0.497] & 0.30 & 0.49 \\
+Destination area & 0.170 [0.166, 0.174] & 0.121 [0.119, 0.123] & 0.83 & 0.78 \\
+Origin area & 0.169 [0.168, 0.170] & 0.071 [0.069, 0.072] & 0.16 & 0.36 \\
+Weather & 0.073 [0.069, 0.078] & 0.050 [0.048, 0.052] & 0.21 & 0.23 \\
+Time & 0.044 [0.043, 0.045] & 0.044 [0.043, 0.045] & 0.04 (ns) & 0.14 \\
+\midrule
+Tract residual, spline LR & & & \multicolumn{2}{c}{0.58 (p = 0.001)} \\
+Tract residual, LightGBM & & & \multicolumn{2}{c}{0.66 (p = 0.001)} \\
+Observed tract e-bike share & & & \multicolumn{2}{c}{0.46 (p = 0.001)} \\
+\bottomrule
+\end{tabular}
+}
+\par\vspace{2pt}\parbox{\linewidth}{\footnotesize Importance is design-weighted to all 2026 trips; CIs from a day-block bootstrap (300 replicates). Moran's I uses queen contiguity of 80 tracts and 999 permutations; (ns) = p $\geq$ 0.05. Rank correlation of feature-level importance between the two models: 0.53.}
+\end{table}

@@ -1,0 +1,26 @@
+# Data are not redistributed (see data/README.md)
+data/raw/
+data/interim/
+data/processed/
+data/external/
+
+# Large or regenerable outputs
+outputs/models/
+outputs/predictions/
+outputs/xai/
+outputs/logs/
+outputs/figures/tiff/
+outputs/figures/svg/
+*.parquet
+*.joblib
+
+# Python and tools
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+catboost_info/
+.DS_Store
+.vscode/
+.idea/

@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite it as below."
+title: "Where riders choose e-bikes over e-scooters: code for the spatial transferability and explainable machine learning analysis"
+type: software
+authors:
+  - family-names: Hassan
+    given-names: Mahbub
+    email: mahbub.fkta@gmail.com
+repository-code: "https://github.com/mahbubchula/ebike-escooter-spatial-transfer-norfolk"
+license: MIT
+version: "1.0.0"
+date-released: "2026-11-10"
+abstract: "Leakage-controlled temporal and spatial-block evaluation, SHAP explanations and spatial autocorrelation analysis of e-bike versus e-scooter choice in Norfolk's dockless fleet, 2021 to 2026."
+keywords:
+  - shared micromobility
+  - e-bikes
+  - e-scooters
+  - spatial transferability
+  - explainable machine learning
+  - SHAP

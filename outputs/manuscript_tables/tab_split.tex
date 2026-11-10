@@ -1,0 +1,17 @@
+\begin{table}[!htbp]
+\centering
+\small
+\caption{Temporal design.}
+\label{tab:split}
+\begin{tabularx}{\linewidth}{llrrL}
+\toprule
+Set & Period & Trips & E-bike (\%) & Use \\
+\midrule
+Inner training & 2021-06-01 to 2024-12-24 & 2,280,811 & 7.74 & Fit candidate models \\
+Embargo & 2024-12-25 to 2024-12-31 & 7,686 & 4.24 & Discarded (7-day gap) \\
+Validation & 2025-01-01 to 2025-12-31 & 994,297 & 3.77 & Tuning, model selection, threshold, spatial-transfer experiment \\
+Final training & 2021-06-01 to 2025-12-31 & 3,282,794 & 6.53 & Refit of the selected configuration \\
+Test & 2026-01-01 to 2026-10-31 & 1,140,427 & 5.47 & Single evaluation (locked) \\
+\bottomrule
+\end{tabularx}
+\end{table}
